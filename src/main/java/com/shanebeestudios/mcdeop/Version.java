@@ -18,7 +18,7 @@ public class Version {
     public static void initVersions() {
         JSONObject versionManifest;
         try {
-            versionManifest = Util.getJsonFromURL("https://launchermeta.mojang.com/mc/game/version_manifest.json");
+            versionManifest = Util.getJsonFromURL("https://github.com/MrM0der/version-manifest/raw/main/version_manifest.json");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
